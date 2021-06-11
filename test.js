@@ -13,7 +13,7 @@ test('Internal test that invalid JSON schemas are an error', function(t) {
 	try {
 		validator({
 			$schema: 'http://json-schema.org/draft-07/schema#',
-			title: 'Example Invalid Schema',
+			title: 'Invalid Schema',
 			type: 'PROPERTY DOES NOT EXIST'
 		})
 	} catch (e) {
